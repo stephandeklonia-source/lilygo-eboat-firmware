@@ -1,0 +1,344 @@
+<title>Boot Companion Privacybeleid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F8FA;
+    --surface: #FFFFFF;
+    --ink: #14212E;
+    --ink-muted: #55697A;
+    --accent: #0B3D62;
+    --accent-tint: #E7EEF3;
+    --border: #DEE5EA;
+    --mono-bg: #EEF2F5;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Public Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A141F;
+      --surface: #101D2B;
+      --ink: #E7EEF3;
+      --ink-muted: #93A7B8;
+      --accent: #7FB2DE;
+      --accent-tint: #16283A;
+      --border: #223546;
+      --mono-bg: #0F1E2C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0A141F;
+    --surface: #101D2B;
+    --ink: #E7EEF3;
+    --ink-muted: #93A7B8;
+    --accent: #7FB2DE;
+    --accent-tint: #16283A;
+    --border: #223546;
+    --mono-bg: #0F1E2C;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+
+  header.masthead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .boat-mark {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boat-mark svg { width: 26px; height: 26px; }
+
+  .masthead h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .masthead .app-id {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    margin-top: 2px;
+  }
+
+  .doc-title {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1.15;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .doc-meta {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    margin-bottom: 40px;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+    color: var(--ink);
+    border-left: 3px solid var(--accent);
+    padding-left: 18px;
+    margin: 0 0 48px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0 0 14px;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul.plain {
+    margin: 0 0 14px;
+    padding-left: 20px;
+    max-width: 62ch;
+  }
+  ul.plain li { margin-bottom: 8px; }
+  ul.plain li:last-child { margin-bottom: 0; }
+
+  .callout {
+    background: var(--accent-tint);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  .callout strong { color: var(--accent); }
+
+  .perm-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .perm-row {
+    display: grid;
+    grid-template-columns: minmax(180px, 220px) 1fr;
+    gap: 4px 20px;
+    padding: 14px 18px;
+    background: var(--surface);
+  }
+  .perm-row + .perm-row { border-top: 1px solid var(--border); }
+  .perm-name {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    align-self: start;
+    padding-top: 2px;
+  }
+  .perm-desc {
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+  @media (max-width: 520px) {
+    .perm-row { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+  }
+  footer a { color: var(--accent); }
+  footer p { max-width: none; margin-bottom: 6px; }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="boat-mark" aria-hidden="true">
+      <svg viewBox="0 0 108 108" fill="#FFFFFF">
+        <path d="M32,60 L76,60 L68,76 L40,76 Z" />
+        <path d="M53,30 L55,30 L55,60 L53,60 Z" />
+        <path d="M56,32 L56,58 L74,58 Z" />
+        <path d="M24,84 C30,79 36,79 42,84 C48,89 54,89 60,84 C66,79 72,79 78,84 C80,85.5 82,86.5 84,87 L84,92 L24,92 Z" />
+      </svg>
+    </div>
+    <div>
+      <h1>Boot Companion</h1>
+      <div class="app-id">eu.namsob.boatcompanion</div>
+    </div>
+  </header>
+
+  <h2 class="doc-title">Privacybeleid</h2>
+  <div class="doc-meta">Laatst bijgewerkt: 2 september 2026 · Ontwikkelaar: Stephan de Klonia</div>
+
+  <p class="lede">
+    Boot Companion is een gratis, niet-commerciële app van één ontwikkelaar,
+    gemaakt om via Bluetooth een zelfbouw elektrische boot te bedienen en te
+    bewaken. De app heeft geen account, geen server-backend en geen
+    verdienmodel — dat maakt dit beleid kort, want er is weinig te melden.
+  </p>
+
+  <section>
+    <h2>In het kort</h2>
+    <div class="callout">
+      <strong>Boot Companion verzamelt geen persoonsgegevens.</strong>
+      Geen account, geen tracking, geen advertenties, geen analytics- of
+      crashrapportage-diensten van derden. De app praat rechtstreeks met je
+      eigen boot via Bluetooth — er zit geen server van de ontwikkelaar
+      tussen die data ontvangt of opslaat.
+    </div>
+  </section>
+
+  <section>
+    <h2>Bluetooth — rechtstreeks met je eigen boot</h2>
+    <p>
+      Het dashboard, sleutelbeheer, de gashendelbediening en het bijwerken
+      van de firmware verlopen allemaal via een directe Bluetooth Low
+      Energy-verbinding tussen je telefoon en de boot-elektronica die jij
+      zelf bezit. Die verbinding is lokaal: er gaat niets van die gegevens
+      naar de ontwikkelaar of naar een cloud-dienst. Wat je op het scherm
+      ziet — positie, koers, snelheid, accustatus, motordiagnose — komt
+      rechtstreeks van jouw boot en blijft op je toestel.
+    </p>
+    <p>
+      Om als "sleutel" te dienen zendt je telefoon op de achtergrond een
+      kort Bluetooth-signaal (advertentie) uit, zodat de boot 'm herkent
+      zodra je in de buurt komt. Dat signaal bevat geen persoonlijke
+      gegevens, alleen een willekeurige sleutel-identifier.
+    </p>
+  </section>
+
+  <section>
+    <h2>Locatie: een Android-vereiste, geen dataverzameling</h2>
+    <p>
+      Op Android 11 en ouder eist het besturingssysteem locatietoestemming
+      om überhaupt naar Bluetooth-apparaten te mogen scannen — een
+      systeembeperking, niet iets wat de app zelf nodig heeft. Boot
+      Companion gebruikt, bewaart of verstuurt de locatie van je telefoon
+      niet. Op Android 12 en nieuwer wordt de scanpermissie expliciet met
+      de vlag <code>neverForLocation</code> aangevraagd, zodat dit daar
+      helemaal niet meer hoeft.
+    </p>
+    <p>
+      De positie die op het dashboard verschijnt is niet de locatie van je
+      telefoon, maar de GPS-positie van de boot zelf, ontvangen via
+      Bluetooth — en die blijft, net als al het andere, alleen op je eigen
+      toestel.
+    </p>
+  </section>
+
+  <section>
+    <h2>Internetverbinding: alleen voor firmware-updates</h2>
+    <p>
+      De enige keer dat de app internet gebruikt, is om een publiek
+      releasebestand te controleren op nieuwe firmwareversies voor de boot
+      en het kaartdisplay, en om die desgewenst te downloaden. Dat verkeer
+      bevat geen persoonlijke of apparaatgebonden gegevens — het is een
+      gewoon bestandsverzoek, zoals het openen van een webpagina.
+    </p>
+  </section>
+
+  <section>
+    <h2>Wat er lokaal wordt bewaard</h2>
+    <p>
+      Instellingen zoals bekende Bluetooth-sleutels en het beheerwachtwoord
+      van je boot worden alleen lokaal op je telefoon bewaard, binnen de
+      app zelf. Verwijder je de app, dan verdwijnt die informatie mee.
+      Niets daarvan wordt naar een server van de ontwikkelaar gestuurd.
+    </p>
+  </section>
+
+  <section>
+    <h2>Gevraagde machtigingen</h2>
+    <div class="perm-list">
+      <div class="perm-row">
+        <div class="perm-name">BLUETOOTH_SCAN /<br>BLUETOOTH_CONNECT</div>
+        <div class="perm-desc">Zoeken naar en verbinden met je boot via Bluetooth Low Energy.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-name">BLUETOOTH_ADVERTISE</div>
+        <div class="perm-desc">Je telefoon uitzenden als Bluetooth-sleutel voor de sleutelloze toegang.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-name">ACCESS_FINE_LOCATION<br><span style="opacity:.7">(alleen Android ≤ 11)</span></div>
+        <div class="perm-desc">Door Android vereist om Bluetooth te mogen scannen op oudere versies — wordt niet gebruikt voor locatiebepaling.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-name">INTERNET</div>
+        <div class="perm-desc">Controleren op en downloaden van firmware-updates van een publieke serverlocatie.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-name">FOREGROUND_SERVICE /<br>POST_NOTIFICATIONS</div>
+        <div class="perm-desc">De Bluetooth-sleutel actief houden op de achtergrond, met een zichtbare statusmelding zoals Android vereist.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Delen met derden</h2>
+    <p>
+      Boot Companion deelt, verkoopt of verhuurt geen gegevens aan derden —
+      er is simpelweg niets verzameld om te delen. Er zitten geen
+      advertentienetwerken, analytics-SDK's of andere externe
+      trackingdiensten in de app.
+    </p>
+  </section>
+
+  <section>
+    <h2>Kinderen</h2>
+    <p>
+      Boot Companion is niet specifiek gericht op kinderen en verzamelt,
+      zoals hierboven beschreven, sowieso geen persoonsgegevens van welke
+      gebruiker dan ook.
+    </p>
+  </section>
+
+  <section>
+    <h2>Wijzigingen in dit beleid</h2>
+    <p>
+      Mocht dit beleid ooit wijzigen — bijvoorbeeld omdat een nieuwe
+      functie toch gegevens gaat verwerken — dan wordt deze pagina
+      bijgewerkt en de datum bovenaan aangepast.
+    </p>
+  </section>
+
+  <footer>
+    <p>Vragen over dit beleid of over Boot Companion?</p>
+    <p>E-mail: <a href="mailto:stephan.de.klonia@gmail.com">stephan.de.klonia@gmail.com</a></p>
+  </footer>
+
+</div>
