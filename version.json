@@ -1,4 +1,6 @@
 {
-  "version": "2026.10.040",
-  "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/firmware.bin"
+  "version": "2026.10.041",
+  "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/firmware.bin",
+  "size": 1761360,
+  "crc32": 672680821
 }

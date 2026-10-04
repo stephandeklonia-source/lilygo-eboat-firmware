@@ -1,4 +1,6 @@
 {
-  "version": "2026.08.010",
-  "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/map-display/firmware.bin"
+  "version": "2026.10.001",
+  "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/map-display/firmware.bin",
+  "size": 1765504,
+  "crc32": 1888780770
 }
