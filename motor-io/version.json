@@ -1,6 +1,6 @@
 {
-  "version": "2026.10.029",
+  "version": "2026.10.030",
   "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/motor-io/firmware.bin",
-  "size": 982032,
-  "crc32": 3276655659
+  "size": 982016,
+  "crc32": 2606800590
 }
