@@ -1,7 +1,7 @@
 {
-  "version": "2026.10.096",
+  "version": "2026.10.097",
   "url": "https://raw.githubusercontent.com/stephandeklonia-source/lilygo-eboat-firmware/main/firmware.bin",
-  "size": 1829232,
-  "crc32": 1543048482,
+  "size": 1829344,
+  "crc32": 858528343,
   "min_motorio": "2026.10.051"
 }
